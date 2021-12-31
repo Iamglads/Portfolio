@@ -21,7 +21,7 @@ class Projects {
         <article class="project">
             <img src="${project.image}" alt="${project.title}" class="project-img" />
             <div>
-              <h2>${project.title}</h2>
+              <h3>${project.title}</h3>
             </div>
         </article>
       </a>`;

@@ -16,4 +16,7 @@
       }
     }
   }
+  @include forMobile {
+    padding: 1em;
+  }
 }

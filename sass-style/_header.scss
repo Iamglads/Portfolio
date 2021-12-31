@@ -29,6 +29,15 @@
       .hero-info {
         width: 65%;
         padding: 2em;
+        h2 {
+          @include forMobile {
+            text-align: center;
+            font-size: 18px;
+          }
+        }
+        @include forMobile {
+          width: 100%;
+        }
       }
       .hero-image {
         width: 35%;
@@ -39,9 +48,16 @@
           border-radius: $radius;
           object-fit: cover;
           filter: grayscale(20%);
+          @include forMobile {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+          }
         }
-
         @include forMobile {
+          display: flex;
+          justify-content: center;
+          width: 100%;
           padding: 0.4em;
         }
       }

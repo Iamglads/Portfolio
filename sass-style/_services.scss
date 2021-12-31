@@ -3,14 +3,15 @@
   -webkit-transition: $transition;
   transition: $transition;
   @extend %shadow-inset;
-  &:hover {
-    @extend %shadow-box-style;
-  }
   .content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .card {
       width: 32%;
+      @include forMobile {
+        width: 100%;
+      }
     }
     .service-icon {
       font-size: 2rem;
@@ -20,14 +21,5 @@
       border-radius: 58px;
       @extend %shadow-box-style;
     }
-  }
-
-  .section__tools {
-    padding: 1em;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
 }

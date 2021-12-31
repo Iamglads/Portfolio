@@ -1,5 +1,5 @@
 /*=============== Variables===============*/
-.section__contact--wrappe .form-contact .btn-submit:hover, .section__portfolio--wrappe .content .card .project, .section__services .content .service-icon, .section__services:hover, .btn, .service-icon {
+.section__contact--wrappe .form-contact .btn-submit:hover, .section__portfolio--wrappe .content .card .project, .section__services .content .service-icon, .btn, .service-icon {
   background: #E0E1E9;
   -webkit-box-shadow: inset 5px 5px 10px #fff, -5px -5px 10px #E0E1E9;
   box-shadow: 5px 5px 10px #b8b9be, -5px -5px 10px #fff;
@@ -95,7 +95,7 @@ p {
   }
 
   h3 {
-    font-size: 1.75rem;
+    font-size: 1.1rem;
   }
 
   h4 {
@@ -155,6 +155,11 @@ img:not(.nav-logo) {
   height: auto;
   text-align: center;
 }
+@media screen and (max-width: 758px) {
+  .section {
+    padding: 1em;
+  }
+}
 @media screen and (max-width: 599px) {
   .section {
     padding: 1em;
@@ -196,6 +201,11 @@ img:not(.nav-logo) {
 .nav .nav__wrappe .logo img {
   width: 220px;
 }
+@media screen and (max-width: 599px) {
+  .nav {
+    padding: 1em;
+  }
+}
 
 /*=============== header===============*/
 .section__header {
@@ -234,6 +244,17 @@ img:not(.nav-logo) {
   width: 65%;
   padding: 2em;
 }
+@media screen and (max-width: 599px) {
+  .section__header--wrappe .content .hero-info h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .section__header--wrappe .content .hero-info {
+    width: 100%;
+  }
+}
 .section__header--wrappe .content .hero-image {
   width: 35%;
   border-radius: 0.5rem;
@@ -246,7 +267,17 @@ img:not(.nav-logo) {
   filter: grayscale(20%);
 }
 @media screen and (max-width: 599px) {
+  .section__header--wrappe .content .hero-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 599px) {
   .section__header--wrappe .content .hero-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     padding: 0.4em;
   }
 }
@@ -267,9 +298,15 @@ img:not(.nav-logo) {
 .section__services .content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .section__services .content .card {
   width: 32%;
+}
+@media screen and (max-width: 599px) {
+  .section__services .content .card {
+    width: 100%;
+  }
 }
 .section__services .content .service-icon {
   font-size: 2rem;
@@ -277,14 +314,6 @@ img:not(.nav-logo) {
   color: #26263A;
   margin-bottom: 1.5rem;
   border-radius: 58px;
-}
-.section__services .section__tools {
-  padding: 1em;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 /*=============== porfolio===============*/
@@ -302,6 +331,11 @@ img:not(.nav-logo) {
   width: 32%;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 599px) {
+  .section__portfolio--wrappe .content .card h3 {
+    font-size: 12px;
+  }
+}
 .section__portfolio--wrappe .content .card .project {
   padding: 1em;
   margin-bottom: 20px;
@@ -313,6 +347,11 @@ img:not(.nav-logo) {
   border-radius: 0.5rem;
   -o-object-fit: cover;
   object-fit: cover;
+}
+@media screen and (max-width: 758px) {
+  .section__portfolio--wrappe .content .card {
+    width: 48%;
+  }
 }
 @media screen and (max-width: 599px) {
   .section__portfolio--wrappe .content .card {

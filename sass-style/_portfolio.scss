@@ -10,6 +10,11 @@
       .card {
         width: 32%;
         margin-bottom: 10px;
+        h3 {
+          @include forMobile {
+            font-size: 12px;
+          }
+        }
         .project {
           padding: 1em;
           margin-bottom: 20px;
@@ -25,6 +30,9 @@
             -o-object-fit: cover;
             object-fit: cover;
           }
+        }
+        @include forTablet {
+          width: 48%;
         }
         @include forMobile {
           width: 100%;
