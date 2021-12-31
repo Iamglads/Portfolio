@@ -1,0 +1,17 @@
+.section__footer {
+  max-width: 1400px;
+  padding-bottom: 1rem;
+  background: $primary-1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+
+  p {
+    margin-top: 20px;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: $ff-primary;
+    color: $primary-2;
+  }
+}

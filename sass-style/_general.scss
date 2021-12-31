@@ -1,0 +1,147 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $ff-primary;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  background-color: $primary-1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  .container__wrappe {
+    max-width: 1400px;
+    width: 1400px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: $spacing;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  font-family: $ff-primary;
+}
+h1 {
+  font-size: 3rem;
+  @include forMobile {
+    font-size: 2rem;
+  }
+}
+h2 {
+  font-size: 2rem;
+  @include forMobile {
+    text-align: center;
+  }
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  font-family: $ff-secondary;
+  font-weight: 300;
+  color: $primary-2;
+  @include forMobile {
+    text-align: center;
+  }
+}
+
+@include forMobile {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+}
+
+a {
+  color: $primary-2;
+  text-decoration: none;
+  cursor: pointer;
+}
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
+
+/*  global classes */
+.service-icon {
+  font-size: 25px;
+  padding: 1em;
+  color: $primary-2;
+  border-radius: 58px;
+  @extend %shadow-box-style;
+}
+
+.btn {
+  min-width: 150px;
+  text-transform: uppercase;
+  color: $primary-2;
+  padding: 0.8rem 2rem;
+  letter-spacing: $spacing;
+  font-weight: 700;
+  -webkit-transition: $transition;
+  transition: $transition;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 58px;
+  margin-top: 50px;
+  @extend %shadow-box-style;
+  &:hover {
+    @extend %shadow-inset;
+  }
+  @include forMobile {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.section {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  height: auto;
+  text-align: center;
+  @include forMobile {
+    padding: 1em;
+  }
+}
+
+/* added during recording */
+.underline {
+  width: 2rem;
+  height: 2px;
+  margin-bottom: 1.25rem;
+  background: $primary-2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}

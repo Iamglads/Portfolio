@@ -1,0 +1,60 @@
+.section__contact {
+  display: flex;
+  justify-content: center;
+  @extend %shadow-inset;
+  &--wrappe {
+    h2 {
+      text-align: center;
+    }
+    .form-contact {
+      width: 100%;
+      padding: 2em;
+      -webkit-border-radius: $radius;
+      border-radius: $radius;
+      @extend %shadow-inset;
+
+      input[type="text"],
+      [type="email"],
+      [type="number"],
+      textarea {
+        width: 100%;
+        padding: 0.7rem;
+        margin-bottom: 15px;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        border-radius: $radius;
+        @extend %shadow-inset;
+      }
+      ::placeholder {
+        color: $primary-2 !important;
+      }
+      textarea {
+        width: 100%;
+      }
+      .btn-submit {
+        width: 100%;
+        background: none;
+        &:hover {
+          @extend %shadow-box-style;
+        }
+      }
+      @include forTablet {
+        padding: 1em;
+      }
+      @include forMobile {
+        width: 100%;
+        padding: 1em;
+      }
+    }
+    @include forTablet {
+      padding: 1em;
+    }
+    @include forMobile {
+      display: block;
+      padding: 0;
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+  }
+}

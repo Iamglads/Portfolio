@@ -1,0 +1,402 @@
+/*=============== Variables===============*/
+.section__contact--wrappe .form-contact .btn-submit:hover, .section__portfolio--wrappe .content .card .project, .section__services .content .service-icon, .section__services:hover, .btn, .service-icon {
+  background: #E0E1E9;
+  -webkit-box-shadow: inset 5px 5px 10px #fff, -5px -5px 10px #E0E1E9;
+  box-shadow: 5px 5px 10px #b8b9be, -5px -5px 10px #fff;
+}
+
+.section__contact--wrappe .form-contact input[type=text],
+.section__contact--wrappe .form-contact [type=email],
+.section__contact--wrappe .form-contact [type=number],
+.section__contact--wrappe .form-contact textarea, .section__contact--wrappe .form-contact, .section__contact, .section__portfolio--wrappe .content .card .project:hover, .section__services, .section__header--wrappe, .btn:hover {
+  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff !important;
+}
+
+/*=============== General===============*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  background-color: #E0E1E9;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container .container__wrappe {
+  max-width: 1400px;
+  width: 1400px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+@media screen and (max-width: 599px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 599px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #26263A;
+}
+@media screen and (max-width: 599px) {
+  p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
+a {
+  color: #26263A;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
+
+/*  global classes */
+.service-icon {
+  font-size: 25px;
+  padding: 1em;
+  color: #26263A;
+  border-radius: 58px;
+}
+
+.btn {
+  min-width: 150px;
+  text-transform: uppercase;
+  color: #26263A;
+  padding: 0.8rem 2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 58px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 599px) {
+  .btn {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.section {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  height: auto;
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  .section {
+    padding: 1em;
+  }
+}
+
+/* added during recording */
+.underline {
+  width: 2rem;
+  height: 2px;
+  margin-bottom: 1.25rem;
+  background: #26263A;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+/*=============== navigation===============*/
+.nav {
+  height: 100px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.nav .nav__wrappe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav__wrappe .logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav__wrappe .logo img {
+  width: 220px;
+}
+
+/*=============== header===============*/
+.section__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__header h1 {
+  line-height: 1;
+  margin-bottom: 20px;
+  color: #26263A;
+  text-align: left;
+}
+@media screen and (max-width: 599px) {
+  .section__header h1 {
+    text-align: center;
+  }
+}
+.section__header h2 {
+  text-align: left;
+}
+.section__header--wrappe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+.section__header--wrappe .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section__header--wrappe .content .hero-info {
+  width: 65%;
+  padding: 2em;
+}
+.section__header--wrappe .content .hero-image {
+  width: 35%;
+  border-radius: 0.5rem;
+}
+.section__header--wrappe .content .hero-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  filter: grayscale(20%);
+}
+@media screen and (max-width: 599px) {
+  .section__header--wrappe .content .hero-image {
+    padding: 0.4em;
+  }
+}
+@media screen and (max-width: 599px) {
+  .section__header--wrappe .content {
+    display: block;
+    min-height: 600px;
+    padding: 3em 1em;
+  }
+}
+
+/*=============== services===============*/
+.section__services {
+  background: #E0E1E9;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.section__services .content {
+  display: flex;
+  justify-content: space-between;
+}
+.section__services .content .card {
+  width: 32%;
+}
+.section__services .content .service-icon {
+  font-size: 2rem;
+  padding: 1em;
+  color: #26263A;
+  margin-bottom: 1.5rem;
+  border-radius: 58px;
+}
+.section__services .section__tools {
+  padding: 1em;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*=============== porfolio===============*/
+.section__portfolio {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.section__portfolio--wrappe .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section__portfolio--wrappe .content .card {
+  width: 32%;
+  margin-bottom: 10px;
+}
+.section__portfolio--wrappe .content .card .project {
+  padding: 1em;
+  margin-bottom: 20px;
+  border-radius: 0.5rem;
+}
+.section__portfolio--wrappe .content .card .project img {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media screen and (max-width: 599px) {
+  .section__portfolio--wrappe .content .card {
+    width: 100%;
+  }
+}
+
+/*=============== contact===============*/
+.section__contact {
+  display: flex;
+  justify-content: center;
+}
+.section__contact--wrappe h2 {
+  text-align: center;
+}
+.section__contact--wrappe .form-contact {
+  width: 100%;
+  padding: 2em;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.section__contact--wrappe .form-contact input[type=text],
+.section__contact--wrappe .form-contact [type=email],
+.section__contact--wrappe .form-contact [type=number],
+.section__contact--wrappe .form-contact textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+}
+.section__contact--wrappe .form-contact ::placeholder {
+  color: #26263A !important;
+}
+.section__contact--wrappe .form-contact textarea {
+  width: 100%;
+}
+.section__contact--wrappe .form-contact .btn-submit {
+  width: 100%;
+  background: none;
+}
+@media screen and (max-width: 758px) {
+  .section__contact--wrappe .form-contact {
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 599px) {
+  .section__contact--wrappe .form-contact {
+    width: 100%;
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 758px) {
+  .section__contact--wrappe {
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 599px) {
+  .section__contact--wrappe {
+    display: block;
+    padding: 0;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+}
+
+/*=============== footer===============*/
+.section__footer {
+  max-width: 1400px;
+  padding-bottom: 1rem;
+  background: #E0E1E9;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
+.section__footer p {
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+  color: #26263A;
+}
+
+/*# sourceMappingURL=styles.css.map */

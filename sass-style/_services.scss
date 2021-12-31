@@ -1,0 +1,33 @@
+.section__services {
+  background: $primary-1;
+  -webkit-transition: $transition;
+  transition: $transition;
+  @extend %shadow-inset;
+  &:hover {
+    @extend %shadow-box-style;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    .card {
+      width: 32%;
+    }
+    .service-icon {
+      font-size: 2rem;
+      padding: 1em;
+      color: $primary-2;
+      margin-bottom: 1.5rem;
+      border-radius: 58px;
+      @extend %shadow-box-style;
+    }
+  }
+
+  .section__tools {
+    padding: 1em;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
