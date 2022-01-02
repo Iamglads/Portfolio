@@ -12,9 +12,9 @@
         },
         {
             "id": 1,
-            "title": "Kaza",
+            "title": "Kasa",
             "langage": ["React"],
-            "image": "./images/kaza.jpg",
+            "image": "./images/kasa.png",
             "url": "https://github.com/Iamglads/Kasa.git",
             "source": "https://github.com/Iamglads/Kasa.git",
             "description" : "Application React"
@@ -59,8 +59,8 @@
         {
             "id": 9,
             "title": "FishEye",
-            "langage": ["Javascript"],
-            "image": "./images/fisheye.jpg",
+            "langage": ["HTML", "CSS", "JavaScript"],
+            "image": "./images/fisheye.png",
             "url": "https://github.com/Iamglads/Fisheye.git",
             "source": "https://github.com/Iamglads/Fisheye.git",
             "description" : "Application de photographes"
