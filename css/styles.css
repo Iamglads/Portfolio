@@ -1,5 +1,5 @@
 /*=============== Variables===============*/
-.section__contact--wrappe .form-contact .btn-submit:hover, .section__portfolio--wrappe .content .card .project, .section__services .content .service-icon, .btn, .service-icon {
+.section__contact--wrappe .form-contact .btn-submit:hover, .section__portfolio--wrappe .content .card, .section__services .content .service-icon, .btn, .service-icon {
   background: #E0E1E9;
   -webkit-box-shadow: inset 5px 5px 10px #fff, -5px -5px 10px #E0E1E9;
   box-shadow: 5px 5px 10px #b8b9be, -5px -5px 10px #fff;
@@ -8,7 +8,7 @@
 .section__contact--wrappe .form-contact input[type=text],
 .section__contact--wrappe .form-contact [type=email],
 .section__contact--wrappe .form-contact [type=number],
-.section__contact--wrappe .form-contact textarea, .section__contact--wrappe .form-contact, .section__contact, .section__portfolio--wrappe .content .card .project:hover, .section__services, .section__header--wrappe, .btn:hover {
+.section__contact--wrappe .form-contact textarea, .section__contact--wrappe .form-contact, .section__contact, .section__portfolio--wrappe .content .card:hover, .section__services, .section__header--wrappe, .btn:hover {
   box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff !important;
 }
 
@@ -329,23 +329,33 @@ img:not(.nav-logo) {
 }
 .section__portfolio--wrappe .content .card {
   width: 32%;
-  margin-bottom: 10px;
-}
-@media screen and (max-width: 599px) {
-  .section__portfolio--wrappe .content .card h3 {
-    font-size: 12px;
-  }
+  height: auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-radius: 0.5rem;
 }
 .section__portfolio--wrappe .content .card .project {
   margin-bottom: 20px;
-  border-radius: 0.5rem;
 }
-.section__portfolio--wrappe .content .card .project img {
+.section__portfolio--wrappe .content .card .project .project-img {
   width: 100%;
   height: 300px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   -o-object-fit: cover;
   object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.section__portfolio--wrappe .content .card .project .project-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: red;
+}
+@media screen and (max-width: 599px) {
+  .section__portfolio--wrappe .content .card .project .project-content h3 {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 758px) {
   .section__portfolio--wrappe .content .card {

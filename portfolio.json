@@ -11,7 +11,7 @@
             "description" : "Intégration de maquette, animation CSS"
         },
         {
-            "id": 1,
+            "id": 2,
             "title": "Kasa",
             "langage": ["React"],
             "image": "./images/kasa.png",
@@ -29,16 +29,16 @@
             "description" : "E-commerce en JavaScript"
         },
         {
-            "id": 5,
+            "id": 4,
             "title": "Auto Import",
             "langage": ["HTML", "CSS", "SASS", "Javascript"],
             "image": "./images/auto-import.png",
-            "url": "https://github.com/Iamglads/Auto_import.git",
+            "url": "https://iamglads.github.io/Auto_import/",
             "source": "https://github.com/Iamglads/Auto_import.git",
             "description" : "Intégration de maquette"
         },
         {
-            "id": 6,
+            "id": 5,
             "title": "Groupmania",
             "langage": ["VUE", "NODE", "Express", "MySql"],
             "image": "./images/groupomania.png",
@@ -48,7 +48,7 @@
         },
 
         {
-            "id": 8,
+            "id": 6,
             "title": "javaScript Training",
             "langage": ["JavaScript"],
             "image": "./images/training.jpg",
@@ -57,22 +57,22 @@
             "description" : "Des projets pour s'entrainer en JavaSript"
         },
         {
-            "id": 9,
+            "id": 7,
             "title": "FishEye",
             "langage": ["HTML", "CSS", "JavaScript"],
             "image": "./images/fisheye.png",
-            "url": "https://github.com/Iamglads/Fisheye.git",
+            "url": "https://iamglads.github.io/Fisheye/",
             "source": "https://github.com/Iamglads/Fisheye.git",
             "description" : "Application de photographes"
         },
         {
-            "id": 10,
+            "id": 8,
             "title": "Les petits plats",
             "langage": ["JavaScript"],
-            "image": "./images/les-petits-plats.jpg",
+            "image": "./images/les-petits-plats.png",
             "url": "https://github.com/Iamglads/Les_petits_plats.git",
             "source": "https://github.com/Iamglads/Les_petits_plats.git",
-            "description" : "Algorithme de recherche JavaScript"
+            "description" : "Algorithme de recherche JavaScript - Suivre le projet"
         }
     ]
 }

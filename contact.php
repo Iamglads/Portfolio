@@ -9,14 +9,14 @@ if(isset($_POST['submit'])) {
     $message = $_POST['message'];
 
 
-    $mailTo = "gladston.aristoverne@gmail.com";
+    $mailTo = "gladston.aristoverne.ga@gmail.com";
     $headers = "From: ".$email;
     $object = "Objet: ".$object;
     $phone = "Téléphone: ".$phone;
-    $txt = "Vous avez reçu un email de ".$name. " . ".$firstname. "\n\n".$message;
+    $txt = "Vous avez reçu un email de:".$name. "  ".$firstname. "\n\n".$message;
 
     mail($mailTo, $object, $phone, $txt, $headers);
-    header("location: index.php?mailsend");
+    header("location: index.php?mailsent");
 }
 
 ?>

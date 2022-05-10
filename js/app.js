@@ -17,14 +17,22 @@ class Projects {
   displayProjects(projects) {
     projects.projets.map((project) => {
       displayProjectsInFront.innerHTML += ` 
-      <a href="${project.url}" class="card">
-        <article class="project">
-            <img src="${project.image}" alt="${project.title}" class="project-img" />
-            <div>
+      <article class="card">
+        <a href="${project.url}" class="project">
+            <img src="${project.image}" alt="${
+        project.title
+      }" class="project-img" />
+            <div class="project-content">
               <h3>${project.title}</h3>
+              <a href="${project.source}"><i class="fab fa-github"></i></a>
             </div>
-        </article>
-      </a>`;
+            <p>${project.description}</p>
+            ${project.langage.map((langage) => {
+              return `<span>${langage}</span>`;
+            })}
+        </a>
+      </article>
+     `;
     });
   }
 }
